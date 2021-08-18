@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$cl-primary: #8476AA;
+$cl-secondary: #99EFD0;
+$cl-tertiary: #F2994A;
+
+$font-inter: Inter;
+$font-railway: Railway;
+$font-rubik: Rubik;
+
+
+.statistics {
+    margin: 180px 0 169px;
+    position: relative;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__desc {
+        width: 65%;
+    }
+
+    &__title {
+        font-family: $font-inter;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.33px;
+        color: $cl-secondary;
+        margin: 0;
+    }
+
+
+    &__text {
+        font-family: $font-railway;
+        color: $cl-primary;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        margin: 32px 0 48px;
+    }
+
+    &__stat {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__box {
+        width: 24%;
+    }
+
+    &__number {
+        font-family: $font-inter;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.33px;
+        color: $cl-secondary;
+        margin: 0 0 16px;
+    }
+
+    &__subtext {
+        font-family: $font-railway;
+        color: $cl-primary;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .statistics {
+
+        margin-bottom: 130px;
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__number {
+            font-size: 24px;
+        }
+
+        &__stat {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+
+    .statistics {
+        margin: 100px 0 100px;
+
+        &__number {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        &__box {
+            width: 30%;
+        }
+
+        &__subtext {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__desc {
+            width: 100%;
+        }
+
+        &__stat {
+            flex-direction: column;
+        }
+
+        &__box {
+            width: 100%;
+        }
+    }
+}

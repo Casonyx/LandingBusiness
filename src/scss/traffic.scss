@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$cl-primary: #8476AA;
+$cl-secondary: #99EFD0;
+
+$font-inter: Inter;
+$font-railway: Railway;
+
+.traffic {
+    padding-top: 60px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 55%;
+    }
+
+    &__title {
+        font-family: $font-inter;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 50px;
+        color: $cl-secondary;
+        margin: 55px 0 0;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        color: $cl-primary;
+        font-family: $font-railway;
+        margin: 32px 0 43px;
+    }
+
+    &__images {
+        width: 90%;
+        max-height: 400px;
+        max-width: 441px;
+        background-size: 100% 100%;
+    }
+
+    &__img {
+        pointer-events: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .traffic {
+
+        &__title {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__info {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+}
+
+// @media (max-width: 660px) {
+    
+//     .traffic {
+
+//         &__images {
+//             display: none;
+//         }
+//     }
+// }

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+
+$cl-tertiary: #F2994A;
+
+$font-inter: Inter;
+
+
+.footer {
+    padding-bottom: 100px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content-header { 
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__title {
+        color: $cl-tertiary;
+        font-family: $font-inter;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0.325px;
+        margin: 0;
+        align-self: center;
+    }
+
+    &__logo {
+        margin: 0 10px;
+    }
+
+    &__links-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__links-title {
+        color: #fff;
+        font-family: $font-inter;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        margin: 86px 0 25px;
+    }
+
+    &__link {
+        font-family: $font-inter;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #fff;
+        text-decoration: none;
+        margin: 8px 0;
+        transition: color .3s;
+
+        &:hover {
+            cursor: pointer;
+            color: rgb(238, 164, 28);
+        }
+    }
+
+    &__copyrights {
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+    }
+
+    &__copyright {
+        font-family: $font-inter;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #8D8D8D;
+        margin: 0;
+    }
+
+    &__policy {
+        font-family: $font-inter;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #8D8D8D;
+        margin: 0 34px;
+    }
+
+    &__service {
+        font-family: $font-inter;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #8D8D8D;
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .footer {
+
+        &__links {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        &__links-title {
+            margin: 30px 0 10px;
+        }
+
+        &__links-body {
+            width: 45%;
+            height: 40%;
+            text-align: center;
+        }
+
+        &__copyrights {
+            margin-top: 80px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+
+    .footer {
+
+        &__logo {
+            margin: 0 0px;
+        }
+
+        &__copyright {
+            font-size: 10px;
+        }
+
+        &__policy {
+            font-size: 10px;
+        }
+
+        &__service {
+            font-size: 10px;
+        }
+    }
+}

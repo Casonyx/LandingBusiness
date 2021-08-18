@@ -1,0 +1,13 @@
+import './js/rainbows.js';
+import './scss/normalize.scss';
+import './scss/base.scss';
+import './scss/header.scss';
+import './scss/m-hero.scss';
+import './scss/choice.scss';
+import './scss/traffic.scss';
+import './scss/statistics.scss';
+import './scss/create-project.scss';
+import './scss/investition.scss';
+import './scss/help.scss';
+import './scss/send-mail.scss';
+import './scss/footer.scss';

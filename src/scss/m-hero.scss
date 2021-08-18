@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$cl-primary: #8476AA;
+$cl-secondary: #99EFD0;
+$cl-tertiary: #F2994A;
+
+$font-inter: Inter;
+$font-railway: Railway;
+$font-rubik: Rubik;
+
+.m-hero {
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__photo-wrapper {
+        width: 50%;
+        max-height: 580px;
+        max-width: 724px;
+        background-size: 100% 100%;
+    }
+
+    &__photo {
+        pointer-events: none;
+        width: 100%;
+        height: auto;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__about {
+        width: 45%;
+        margin-top: 31px;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: $font-inter;
+        color: $cl-secondary;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    &__text {
+        margin: 0;
+        font-family: $font-railway;
+        color: $cl-primary;
+        margin: 19px 0 40px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__preview {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__preview-content {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__preview-text {
+        font-family: $font-railway;
+        color: $cl-primary;
+        margin: 15px 0 0;
+        font-size: 16px;
+        line-height: 22px;
+    
+    }
+
+    &__preview-subtext {
+        font-family: $font-rubik;
+        cursor: pointer;
+        text-decoration: none;
+        color: #6D6D78;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .m-hero {
+        &__photo-wrapper {
+            display: none;
+        }
+
+        &__about {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__preview {
+            justify-content: center;
+        }
+
+        &__preview-content {
+            width: 30%;
+        }
+
+        &__title {
+            text-align: center;
+            max-width: 900px;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__buttons {
+            align-self: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .m-hero {
+
+        margin-top: 20px;
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__preview {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__preview-text {
+            text-align: center;
+            margin: 10px;
+        }
+
+        &__preview-subtext {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+
+    .m-hero {
+
+        &__video iframe {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__preview-content {
+            width: 100%;
+        }
+    }
+}

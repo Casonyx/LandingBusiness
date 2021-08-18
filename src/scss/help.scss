@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$cl-primary: #8476AA;
+$cl-secondary: #99EFD0;
+
+$font-inter: Inter;
+$font-railway: Railway;
+
+
+.help {
+    position: relative;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__images {
+        width: 90%;
+        max-height: 446px;
+        max-width: 495px;
+        background-size: 100% 100%;
+    }
+
+    &__img {
+        pointer-events: none;
+        width: 100%;
+        height: auto;
+    }
+
+    &__box {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 650px;
+        margin-left: 25px;
+    }
+
+    &__info {
+        width: 100%;
+    }
+
+    &__title {
+        font-family: $font-inter;
+        color: $cl-secondary;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0.325px;
+        margin: 0;
+    }
+
+    &__text {
+        font-family: $font-railway;
+        color: $cl-primary;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin: 32px 0 0;
+    }
+
+    &__feature1 {
+        width: 40%;
+    }
+
+    &__subtitle {
+        font-family: $font-inter;
+        color: $cl-secondary;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+    }
+
+    &__subtext {
+        font-family: $font-railway;
+        color: $cl-primary;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin: 16px 0 8px;
+    }
+
+    &__feature2 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .help {
+
+        &__title {
+            text-align: center;
+        }
+
+        &__content {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__info {
+            margin-bottom: 15px;
+        }
+    
+        &__text {
+            text-align: center;
+        }
+
+        &__box {
+            margin: 0 0 30px;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+
+        &__subtext {
+            text-align: center;
+        }
+
+        &__feature1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__feature2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

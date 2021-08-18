@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+$cl-tertiary: #F2994A;
+
+$font-rubik: Rubik;
+
+.gradient-wrapper {
+    background: linear-gradient(180deg, #3B1D60 1.22%, #040D3E 137.28%);
+}
+
+.container {
+    max-width: 1590px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container-content {
+    max-width: 1290px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.color-wrapper {
+    background-color: #121248;
+}
+
+.btn_outline {
+    border: 1px solid #F2994A;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: Transparent;
+    color: #F2994A;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: $font-rubik;
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: #F2994A;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.btn_properties {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background: #F2994A;
+    box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+    border-radius: 4px;
+    color: #fff;
+    font-family: $font-rubik;
+    border: 1px solid #F2994A;
+    transition: background-color .3s;
+}
+
+.header {
+
+    &__sign-in {
+        min-width: 112px;
+        min-height: 36px;
+        margin-right: 20px;
+    }
+
+    &__sign-up {
+        min-width: 112px;
+        min-height: 36px;
+
+        &:hover {
+            background-color: #2e1a58;
+            color: #F2994A;
+            cursor: pointer;
+        }
+    }
+}
+
+.m-hero {
+    
+    &__learn-more {
+        min-width: 155px;
+        min-height: 55px;
+
+        &:hover {
+            background-color: #2e1a58;
+            color: #F2994A;
+            cursor: pointer;
+        }
+    }
+
+    &__demo {
+        margin-left: 20px;
+        min-width: 155px;
+        min-height: 55px;
+    }
+}
+
+.traffic {
+
+    &__btn {
+        min-width: 155px;
+        min-height: 55px;
+
+        &:hover {
+            background-color: #2e1a58;
+            color: #F2994A;
+            cursor: pointer;
+        }
+    }
+}
+
+.orange-word {
+    color: $cl-tertiary;
+}
+
+.investition {
+    &__btn {
+        min-width: 155px;
+        min-height: 55px;
+
+        &:hover {
+            background-color: #2e1a58;
+            color: #F2994A;
+            cursor: pointer;
+        }
+    }
+}
+
+.send-mail {
+
+    &__btn {
+        min-width: 128px;
+        min-height: 56px;
+
+        &:hover {
+            background-color: #2e1a58;
+            color: #F2994A;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 866px) {
+
+    .header {
+
+        &__sign-in {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .m-hero {
+    
+        &__learn-more {
+            min-width: 134px;
+        }
+    
+        &__demo {
+            margin-left: 0;
+            min-width: 134px;
+        }
+    }
+}
